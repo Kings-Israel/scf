@@ -1,0 +1,1863 @@
+[
+  {
+    "id": 1,
+    "name": "Bank",
+    "created_at": "2024-03-22T08:52:17.000000Z",
+    "updated_at": "2024-03-22T08:52:17.000000Z",
+    "groups": [
+      {
+        "id": 1,
+        "name": "Edit",
+        "description": "Edit",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 1,
+            "target_role_id": 1,
+            "name": "Edit Fees",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Configuration Management",
+        "description": "Configuration Management",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 2,
+            "target_role_id": 2,
+            "name": "View Product Configurations",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 3,
+            "target_role_id": 2,
+            "name": "Manage Product Configurations",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 4,
+            "target_role_id": 2,
+            "name": "Approve Product Configurations",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 5,
+            "target_role_id": 2,
+            "name": "Manage Holidays",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 6,
+            "target_role_id": 2,
+            "name": "API Access Token",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 7,
+            "target_role_id": 2,
+            "name": "Bank Configuration Batchjob",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 8,
+            "target_role_id": 2,
+            "name": "Remark Message List",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 9,
+            "target_role_id": 2,
+            "name": "View Base Rates",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 10,
+            "target_role_id": 2,
+            "name": "Manage Base Rates",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 11,
+            "target_role_id": 2,
+            "name": "Edit Base Rates",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 12,
+            "target_role_id": 2,
+            "name": "View Taxes",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 13,
+            "target_role_id": 2,
+            "name": "Manage Taxes",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 14,
+            "target_role_id": 2,
+            "name": "Manage Branches",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 15,
+            "target_role_id": 2,
+            "name": "Manage Industries",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 16,
+            "target_role_id": 2,
+            "name": "Manage Geo Locations",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 17,
+            "target_role_id": 2,
+            "name": "Manage Company Classification",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 18,
+            "target_role_id": 2,
+            "name": "Manage Platform Configurations",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 19,
+            "target_role_id": 2,
+            "name": "Manage Email Templates",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 20,
+            "target_role_id": 2,
+            "name": "Manage Currencies",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 21,
+            "target_role_id": 2,
+            "name": "Manage Attachments",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 22,
+            "target_role_id": 2,
+            "name": "View Fees",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 23,
+            "target_role_id": 2,
+            "name": "Manage Fees",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 24,
+            "target_role_id": 2,
+            "name": "Manage Sub Industries",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 25,
+            "target_role_id": 2,
+            "name": "Manage Business Types",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 26,
+            "target_role_id": 2,
+            "name": "Upload TDS Certificate",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 27,
+            "target_role_id": 2,
+            "name": "TDS Certificate Checker",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 28,
+            "target_role_id": 2,
+            "name": "Manage Pool Accounts",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "User Management",
+        "description": "User Management",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 29,
+            "target_role_id": 3,
+            "name": "View Users",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 30,
+            "target_role_id": 3,
+            "name": "Add/Edit Users",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 31,
+            "target_role_id": 3,
+            "name": "Activate/Deactivate Users",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 32,
+            "target_role_id": 3,
+            "name": "Users Changes Checker",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 33,
+            "target_role_id": 3,
+            "name": "Manage Roles",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Company Management",
+        "description": "Company Management",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 34,
+            "target_role_id": 4,
+            "name": "View Companies",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 35,
+            "target_role_id": 4,
+            "name": "Company Bulk Approve",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 36,
+            "target_role_id": 4,
+            "name": "Add/Edit Companies",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 37,
+            "target_role_id": 4,
+            "name": "View Company Users",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 38,
+            "target_role_id": 4,
+            "name": "Activate/Deactivate Companies",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 39,
+            "target_role_id": 4,
+            "name": "Block/Unblock Companies",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 40,
+            "target_role_id": 4,
+            "name": "Company Changes Checker",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 41,
+            "target_role_id": 4,
+            "name": "Manage Authorization Group",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 42,
+            "target_role_id": 4,
+            "name": "Upload Companies",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 43,
+            "target_role_id": 4,
+            "name": "Manage Authorization Matrix",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Program Management",
+        "description": "Program Management",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 44,
+            "target_role_id": 5,
+            "name": "View Programs & Mapping",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 45,
+            "target_role_id": 5,
+            "name": "Add/Edit Program & Mapping",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 46,
+            "target_role_id": 5,
+            "name": "Activate/Deactivate Program & Mapping",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 47,
+            "target_role_id": 5,
+            "name": "Program Changes Checker",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 48,
+            "target_role_id": 5,
+            "name": "Upload Programs",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 49,
+            "target_role_id": 5,
+            "name": "Bulk Program Changes Checker",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 50,
+            "target_role_id": 5,
+            "name": "Program Mapping Bulk Approve",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 51,
+            "target_role_id": 5,
+            "name": "Upload Mapping",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Invoice Financing",
+        "description": "Invoice Financing",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 52,
+            "target_role_id": 6,
+            "name": "View Vendor Financing Requests",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 53,
+            "target_role_id": 6,
+            "name": "Approve Vendor Financing Requests Level 1",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 54,
+            "target_role_id": 6,
+            "name": "Approve Vendor Financing Requests Level 2",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 55,
+            "target_role_id": 6,
+            "name": "Initiate Repayment for Vendor Finance",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 56,
+            "target_role_id": 6,
+            "name": "Initiate Drawdowns",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 57,
+            "target_role_id": 6,
+            "name": "Upload Financing Requests",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 58,
+            "target_role_id": 6,
+            "name": "Discount Request Changes Checker",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 59,
+            "target_role_id": 6,
+            "name": "Upload VF Transactions",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Distributor Financing (Overdraft)",
+        "description": "Distributor Financing (Overdraft)",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 60,
+            "target_role_id": 7,
+            "name": "View Dealer Financing Requests",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 61,
+            "target_role_id": 7,
+            "name": "Approve Dealer Financing Requests Level 1",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 62,
+            "target_role_id": 7,
+            "name": "Approve Dealer Financing Requests Level 2",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 63,
+            "target_role_id": 7,
+            "name": "View OD AccountsInitiate Drawdowns",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 64,
+            "target_role_id": 7,
+            "name": "Upload PIs",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 65,
+            "target_role_id": 7,
+            "name": "Add/Debit Funds in OD Accounts",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 66,
+            "target_role_id": 7,
+            "name": "Upload Financing Requests",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 67,
+            "target_role_id": 7,
+            "name": "DF Debit/Credit/Changes Checker",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 68,
+            "target_role_id": 7,
+            "name": "Upload DF Transactions",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Payment Management",
+        "description": "Payment Management",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 69,
+            "target_role_id": 8,
+            "name": "View Payment Requests",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 70,
+            "target_role_id": 8,
+            "name": "View CBS Transactions",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 71,
+            "target_role_id": 8,
+            "name": "Run CBS Batch Job Manually",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 72,
+            "target_role_id": 8,
+            "name": "Update CBS Transaction",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 73,
+            "target_role_id": 8,
+            "name": "Initiate Transaction",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 74,
+            "target_role_id": 8,
+            "name": "CBS Transactions List",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 75,
+            "target_role_id": 8,
+            "name": "View CBS Transactions With Pool Accounts",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 76,
+            "target_role_id": 8,
+            "name": "View Payments With Pool Accounts",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Reporting",
+        "description": "Reporting",
+        "role_type_id": 1,
+        "created_at": "2024-03-22T08:52:17.000000Z",
+        "updated_at": "2024-03-22T08:52:17.000000Z",
+        "access_groups": [
+          {
+            "id": 77,
+            "target_role_id": 9,
+            "name": "View Trial Balance Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 78,
+            "target_role_id": 9,
+            "name": "View Anchorwise Distributors Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 79,
+            "target_role_id": 9,
+            "name": "View Anchorwise Vendor Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 80,
+            "target_role_id": 9,
+            "name": "View Cron Logs",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 81,
+            "target_role_id": 9,
+            "name": "View Failed CBS transaction Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 82,
+            "target_role_id": 9,
+            "name": "View IF - Funding Limits Utilization Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 83,
+            "target_role_id": 9,
+            "name": "View Inactive Users List",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 84,
+            "target_role_id": 9,
+            "name": "View Payments Pending Approval Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 85,
+            "target_role_id": 9,
+            "name": "View Payments Pending Disbursal Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 86,
+            "target_role_id": 9,
+            "name": "View Payments Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 87,
+            "target_role_id": 9,
+            "name": "View Maturing Payments Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 88,
+            "target_role_id": 9,
+            "name": "View Maturity Extended Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 89,
+            "target_role_id": 9,
+            "name": "View Payments",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 90,
+            "target_role_id": 9,
+            "name": "View Rejected Payments Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 91,
+            "target_role_id": 9,
+            "name": "View User Activity Log Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 92,
+            "target_role_id": 9,
+            "name": "View User ID Maintenance History Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 93,
+            "target_role_id": 9,
+            "name": "View Users and Roles Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 94,
+            "target_role_id": 9,
+            "name": "View DF - Collection Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 95,
+            "target_role_id": 9,
+            "name": "cash colletereal Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 96,
+            "target_role_id": 9,
+            "name": "PF - Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 97,
+            "target_role_id": 9,
+            "name": "PF and CC Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 98,
+            "target_role_id": 9,
+            "name": "View DF - Drawdown Details Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 99,
+            "target_role_id": 9,
+            "name": "View DF - Funding Limits Utilization Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 100,
+            "target_role_id": 9,
+            "name": "View DF - Income Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 101,
+            "target_role_id": 9,
+            "name": "View Distributor Limit Utilization Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 102,
+            "target_role_id": 9,
+            "name": "View DF - Monthly Utilization & Outstanding Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 103,
+            "target_role_id": 9,
+            "name": "View DF - OD Ledger Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 104,
+            "target_role_id": 9,
+            "name": "View DF - Overdue Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 105,
+            "target_role_id": 9,
+            "name": "View DF - Potential Financing Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 106,
+            "target_role_id": 9,
+            "name": "DF - Fees/Charges & Interest Sharing Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 107,
+            "target_role_id": 9,
+            "name": "View DF - Program Mapping Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 108,
+            "target_role_id": 9,
+            "name": "View DF - Programs ReportView IF - Income Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 109,
+            "target_role_id": 9,
+            "name": "View IF - Overdue Invoices Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 110,
+            "target_role_id": 9,
+            "name": "View IF - Potential Financing Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 111,
+            "target_role_id": 9,
+            "name": "View IF - Payment Details Report",
+            "created_at": "2024-03-22T08:52:17.000000Z",
+            "updated_at": "2024-03-22T08:52:17.000000Z"
+          },
+          {
+            "id": 112,
+            "target_role_id": 9,
+            "name": "IF - Fees/Charges & Interest Sharing Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 113,
+            "target_role_id": 9,
+            "name": "View IF - Programs Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 114,
+            "target_role_id": 9,
+            "name": "View IF - Program Mapping Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 115,
+            "target_role_id": 9,
+            "name": "Vendor's Daily Outstanding Balance",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 116,
+            "target_role_id": 9,
+            "name": "View IF - Vendor Classification Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 117,
+            "target_role_id": 9,
+            "name": "View DF - Dealer Classification Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 118,
+            "target_role_id": 9,
+            "name": "View VF - Repayment Details Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 119,
+            "target_role_id": 9,
+            "name": "Reconciliation Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Anchor",
+    "created_at": "2024-03-22T08:52:18.000000Z",
+    "updated_at": "2024-03-22T08:52:18.000000Z",
+    "groups": [
+      {
+        "id": 10,
+        "name": "Configuration Management",
+        "description": "Configuration Management",
+        "role_type_id": 2,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 120,
+            "target_role_id": 10,
+            "name": "View Configurations",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 121,
+            "target_role_id": 10,
+            "name": "Update Configurations",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 122,
+            "target_role_id": 10,
+            "name": "Manage Vendor Settings",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 123,
+            "target_role_id": 10,
+            "name": "Manage Attachments",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Payments View",
+        "description": "Payments View",
+        "role_type_id": 2,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 124,
+            "target_role_id": 11,
+            "name": "View Payments",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "name": "IF - Purchase Order Management",
+        "description": "IF - Purchase Order Management",
+        "role_type_id": 2,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 125,
+            "target_role_id": 12,
+            "name": "View POs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 126,
+            "target_role_id": 12,
+            "name": "Manage POs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 127,
+            "target_role_id": 12,
+            "name": "Approve POs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "name": "IF - Invoice Management",
+        "description": "IF - Invoice Management",
+        "role_type_id": 2,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 128,
+            "target_role_id": 13,
+            "name": "View Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 129,
+            "target_role_id": 13,
+            "name": "Approve Invoices - Level 1",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 130,
+            "target_role_id": 13,
+            "name": "Approve Invoices - Level 2",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 131,
+            "target_role_id": 13,
+            "name": "Change Invoice Due Date",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 132,
+            "target_role_id": 13,
+            "name": "Initiate Repayment for Vendor Finance",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 133,
+            "target_role_id": 13,
+            "name": "Upload Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 134,
+            "target_role_id": 13,
+            "name": "Request Finance",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "DF - Purchase Order Management",
+        "description": "DF - Purchase Order Management",
+        "role_type_id": 2,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 135,
+            "target_role_id": 14,
+            "name": "View POs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 136,
+            "target_role_id": 14,
+            "name": "Accept POs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "DF - Invoice Management",
+        "description": "DF - Invoice Management",
+        "role_type_id": 2,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 137,
+            "target_role_id": 15,
+            "name": "View Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 138,
+            "target_role_id": 15,
+            "name": "Manage Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 139,
+            "target_role_id": 15,
+            "name": "Invoice Checker",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 140,
+            "target_role_id": 15,
+            "name": "View DPD Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 141,
+            "target_role_id": 15,
+            "name": "Request Finance for Distibutor",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "name": "DF Miscellaneous",
+        "description": "DF Miscellaneous",
+        "role_type_id": 2,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 142,
+            "target_role_id": 16,
+            "name": "View OD Accounts",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 143,
+            "target_role_id": 16,
+            "name": "View Funding Limits of a Dealer",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 144,
+            "target_role_id": 16,
+            "name": "View Cash Slabs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 145,
+            "target_role_id": 16,
+            "name": "Manage Cash Slabs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Report",
+        "description": "Report",
+        "role_type_id": 2,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 146,
+            "target_role_id": 17,
+            "name": "View PI Listing Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 147,
+            "target_role_id": 17,
+            "name": "View Financing Usage",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 148,
+            "target_role_id": 17,
+            "name": "View Limit Utilization Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 149,
+            "target_role_id": 17,
+            "name": "View All Invoices Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dealer",
+    "created_at": "2024-03-22T08:52:18.000000Z",
+    "updated_at": "2024-03-22T08:52:18.000000Z",
+    "groups": [
+      {
+        "id": 18,
+        "name": "Configuration Management",
+        "description": "Configuration Management",
+        "role_type_id": 3,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 150,
+            "target_role_id": 18,
+            "name": "Manage Configuration",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 151,
+            "target_role_id": 18,
+            "name": "Manage Anchor Setting",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 152,
+            "target_role_id": 18,
+            "name": "Manage Attachments",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Maker",
+        "description": "Maker",
+        "role_type_id": 3,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 153,
+            "target_role_id": 19,
+            "name": "View POs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 154,
+            "target_role_id": 19,
+            "name": "Initiate OD Repayment",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 155,
+            "target_role_id": 19,
+            "name": "Manage POs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 156,
+            "target_role_id": 19,
+            "name": "View Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 157,
+            "target_role_id": 19,
+            "name": "Request Dealer Finance",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Checker",
+        "description": "Checker",
+        "role_type_id": 3,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 158,
+            "target_role_id": 20,
+            "name": "OD Repayment",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 159,
+            "target_role_id": 20,
+            "name": "POs Checker",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 160,
+            "target_role_id": 20,
+            "name": "Dealer Finacnce Request",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "name": "Miscellaneous",
+        "description": "Miscellaneous",
+        "role_type_id": 3,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 161,
+            "target_role_id": 21,
+            "name": "View OD Repayments",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 162,
+            "target_role_id": 21,
+            "name": "View Discounting Requests",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 163,
+            "target_role_id": 21,
+            "name": "View OD Accounts",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Vendor",
+    "created_at": "2024-03-22T08:52:18.000000Z",
+    "updated_at": "2024-03-22T08:52:18.000000Z",
+    "groups": [
+      {
+        "id": 22,
+        "name": "Configuration Management",
+        "description": "Configuration Management",
+        "role_type_id": 4,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 164,
+            "target_role_id": 22,
+            "name": "Manage Configurations",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 165,
+            "target_role_id": 22,
+            "name": "Manage Anchor Settings",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 166,
+            "target_role_id": 22,
+            "name": "Manage Attachments",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Maker",
+        "description": "Maker",
+        "role_type_id": 4,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 167,
+            "target_role_id": 23,
+            "name": "Accept POs",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 168,
+            "target_role_id": 23,
+            "name": "Flip PO to Invoice",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 169,
+            "target_role_id": 23,
+            "name": "Manage Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 170,
+            "target_role_id": 23,
+            "name": "Upload Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 171,
+            "target_role_id": 23,
+            "name": "Edit Invoice",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 172,
+            "target_role_id": 23,
+            "name": "Delete Invoice",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 173,
+            "target_role_id": 23,
+            "name": "Delete Attachments from Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 174,
+            "target_role_id": 23,
+            "name": "Replicate Invoice",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 175,
+            "target_role_id": 23,
+            "name": "Request Vendor Finance",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Checker",
+        "description": "Checker",
+        "role_type_id": 4,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 176,
+            "target_role_id": 24,
+            "name": "Invoice Checker",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 177,
+            "target_role_id": 24,
+            "name": "Vendor Finance Request Checker",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "View Lists",
+        "description": "View Lists",
+        "role_type_id": 4,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 178,
+            "target_role_id": 25,
+            "name": "View Purchase Orders",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 179,
+            "target_role_id": 25,
+            "name": "View Invoices",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 180,
+            "target_role_id": 25,
+            "name": "View PI(s)",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 181,
+            "target_role_id": 25,
+            "name": "View Payments",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 182,
+            "target_role_id": 25,
+            "name": "View Cash Planner",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 183,
+            "target_role_id": 25,
+            "name": "View Vendor Finance Requests",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Reports",
+        "description": "Reports",
+        "role_type_id": 4,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 184,
+            "target_role_id": 26,
+            "name": "View Funding Limit Utilization Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 185,
+            "target_role_id": 26,
+            "name": "View Financing Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 186,
+            "target_role_id": 26,
+            "name": "View IF - Payment Details Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 187,
+            "target_role_id": 26,
+            "name": "View All Invoices Report",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "CRM",
+    "created_at": "2024-03-22T08:52:18.000000Z",
+    "updated_at": "2024-03-22T08:52:18.000000Z",
+    "groups": [
+      {
+        "id": 27,
+        "name": "Pipeline Contacts",
+        "description": "Pipeline Contacts",
+        "role_type_id": 5,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 188,
+            "target_role_id": 27,
+            "name": "Add Contact",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 189,
+            "target_role_id": 27,
+            "name": "View Contact",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 190,
+            "target_role_id": 27,
+            "name": "Edit Contact",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 191,
+            "target_role_id": 27,
+            "name": "Add Interaction",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 192,
+            "target_role_id": 27,
+            "name": "Schedule View",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 193,
+            "target_role_id": 27,
+            "name": "Convert to Lead",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 194,
+            "target_role_id": 27,
+            "name": "View Contact",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Pipeline Lead",
+        "description": "Pipeline Lead",
+        "role_type_id": 5,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 195,
+            "target_role_id": 28,
+            "name": "Add Lead",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 196,
+            "target_role_id": 28,
+            "name": "View Lead",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 197,
+            "target_role_id": 28,
+            "name": "Edit Lead",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 198,
+            "target_role_id": 28,
+            "name": "Add Interaction",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 199,
+            "target_role_id": 28,
+            "name": "Schedule View",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 200,
+            "target_role_id": 28,
+            "name": "Convert to Opportunity",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 201,
+            "target_role_id": 28,
+            "name": "View Lead",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Pipeline Opportunity",
+        "description": "Pipeline Opportunity",
+        "role_type_id": 5,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 202,
+            "target_role_id": 29,
+            "name": "View Opportunity",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 203,
+            "target_role_id": 29,
+            "name": "Add Interaction",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 204,
+            "target_role_id": 29,
+            "name": "Edit Opportunity",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 205,
+            "target_role_id": 29,
+            "name": "Convert to Opportunity",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 206,
+            "target_role_id": 29,
+            "name": "View Opportunity",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 207,
+            "target_role_id": 29,
+            "name": "Share KYC",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Pipeline Closed",
+        "description": "Pipeline Closed",
+        "role_type_id": 5,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 208,
+            "target_role_id": 30,
+            "name": "View Closed",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "name": "Schedules",
+        "description": "Schedules",
+        "role_type_id": 5,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 209,
+            "target_role_id": 31,
+            "name": "View Schedules",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 210,
+            "target_role_id": 31,
+            "name": "Add Schedules",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "name": "Follow Ups",
+        "description": "Follow Ups",
+        "role_type_id": 5,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 211,
+            "target_role_id": 32,
+            "name": "View Follow Ups",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          },
+          {
+            "id": 212,
+            "target_role_id": 32,
+            "name": "Add Notes",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "Reports",
+        "description": "Reports",
+        "role_type_id": 5,
+        "created_at": "2024-03-22T08:52:18.000000Z",
+        "updated_at": "2024-03-22T08:52:18.000000Z",
+        "access_groups": [
+          {
+            "id": 213,
+            "target_role_id": 33,
+            "name": "View Reports",
+            "created_at": "2024-03-22T08:52:18.000000Z",
+            "updated_at": "2024-03-22T08:52:18.000000Z"
+          }
+        ]
+      }
+    ]
+  }
+]

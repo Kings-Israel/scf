@@ -1,0 +1,96 @@
+{
+  "menu": [
+    {
+      "url": "/vendor/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "vendor.dashboard"
+    },
+    {
+      "name": "Purchase Orders",
+      "icon": "menu-icon tf-icons ti ti-truck",
+      "slug": "vendor.purchase-orders.index",
+      "url": "/vendor/purchase-orders",
+      "permissions": ["View Purchase Orders"]
+    },
+    {
+      "name": "Invoices",
+      "icon": "menu-icon tf-icons ti ti-report",
+      "slug": "vendor.invoice",
+      "permissions": ["View Invoices", "Manage Invoices", "Edit Invoice", "Flip PO to Invoice", "View Payments"],
+      "submenu": [
+        {
+          "url": "/vendor/invoices",
+          "name": "All Invoices",
+          "slug": "vendor.invoice-index",
+          "permissions": ["View Invoices"]
+        },
+        {
+          "url": "/vendor/invoices/create",
+          "name": "Create Invoice",
+          "slug": "vendor.invoice-create",
+          "permissions": ["Manage Invoices", "Edit Invoice", "Flip PO to Invoice"]
+        },
+        {
+          "url": "/vendor/invoices/payments",
+          "name": "Payments",
+          "slug": "vendor.invoice-payments",
+          "permissions": ["View Payments"]
+        }
+      ]
+    },
+    {
+      "name": "Fund Planner",
+      "icon": "menu-icon tf-icons ti ti-coin",
+      "slug": "vendor.cashplanner",
+      "url": "/vendor/cash/planner",
+      "permissions": ["View Cash Planner"]
+    },
+    {
+      "name": "Financial Requests",
+      "icon": "menu-icon tf-icons ti ti-currency-dollar",
+      "slug": "vendor.financialrequests",
+      "url": "/vendor/finance/requests",
+      "permissions": ["View Vendor Finance Requests"]
+    },
+    {
+      "name": "Reports",
+      "icon": "menu-icon tf-icons ti ti-files",
+      "slug": "vendor.reports",
+      "url": "/vendor/reports/dashboard",
+      "permissions": [
+        "View Funding Utilization Limits",
+        "View Financing Report",
+        "View IF - Payment Details Report",
+        "View All Invoices Report"
+      ],
+      "submenu": [
+        {
+          "url": "/vendor/reports/all-invoices-report/view",
+          "name": "All Invoices Report",
+          "slug": "vendor.reports.all-invoices",
+          "permissions": ["View All Invoices Report"]
+        },
+        {
+          "url": "/vendor/reports/programs-report/view",
+          "name": "Programs Report",
+          "slug": "vendor.reports.programs",
+          "permissions": ["View Financing Report"]
+        },
+        {
+          "url": "/vendor/reports/payments-report/view",
+          "name": "Payments Report",
+          "slug": "vendor.reports.payments",
+          "permissions": ["View Financing Report"]
+        }
+      ]
+    },
+    {
+      "url": "/vendor/settings",
+      "name": "Settings",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "vendor.settings",
+      "permissions": ["View Configurations"]
+    }
+  ]
+}

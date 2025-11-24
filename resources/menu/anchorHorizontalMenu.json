@@ -1,0 +1,111 @@
+{
+  "menu": [
+    {
+      "url": "/anchor/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "anchor.dashboard"
+    },
+    {
+      "name": "Purchase Orders",
+      "icon": "menu-icon tf-icons ti ti-truck",
+      "slug": "anchor.purchase",
+      "permissions": ["View POs", "Manage POs", "Approve POs"],
+      "submenu": [
+        {
+          "url": "/anchor/purchase-orders",
+          "name": "Purchase Orders",
+          "slug": "anchor.purchase-orders.index",
+          "permissions": ["View POs", "Manage POs", "Approve POs"]
+        },
+        {
+          "url": "/anchor/purchase-orders/create",
+          "name": "Create Purchase Order",
+          "slug": "anchor.purchase-orders.create",
+          "permissions": ["Manage POs"]
+        }
+      ]
+    },
+    {
+      "name": "Invoices",
+      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+      "slug": "anchor.invoices",
+      "permissions": ["View Invoices"],
+      "submenu": [
+        {
+          "url": "/anchor/invoices",
+          "name": "Invoices",
+          "slug": "anchor.invoices",
+          "permissions": ["View Invoices"]
+        },
+        {
+          "url": "/anchor/payment-instructions",
+          "name": "Payment Instructions",
+          "slug": "anchor.invoices.payment-instructions",
+          "permissions": ["View Invoices"]
+        }
+      ]
+    },
+    {
+      "url": "/anchor/reports/view",
+      "name": "Reports",
+      "icon": "menu-icon tf-icons ti ti-book-2",
+      "slug": "anchor.reports",
+      "permissions": [
+        "View Reports",
+        "View All Invoices Report",
+        "View Financing Usage",
+        "View PI Listing Report",
+        "View Utilization Limit Report"
+      ],
+      "submenu": [
+        {
+          "url": "/anchor/reports/maturing-invoices-report",
+          "name": "Maturing Payments",
+          "slug": "anchor.reports.maturing-invoices"
+        },
+        {
+          "url": "/anchor/reports/paid-invoices-report",
+          "name": "Paid Invoices Report",
+          "slug": "anchor.reports.paid-invoices"
+        },
+        {
+          "url": "/anchor/reports/overdue-invoices-report",
+          "name": "Overdue Invoices Report",
+          "slug": "anchor.reports.overdue-invoices"
+        },
+        {
+          "url": "/anchor/reports/closed-invoices-report",
+          "name": "Closed Invoices Report",
+          "slug": "anchor.reports.closed-invoices"
+        }
+      ]
+    },
+    {
+      "name": "Configurations",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "anchor.configurations",
+      "permissions": ["View Configurations", "Update Configurations", "Manage Vendor Settings", "Manage Attachments"],
+      "submenu": [
+        {
+          "url": "/anchor/configurations/general",
+          "name": "General",
+          "slug": "anchor.configurations-general",
+          "permissions": ["View Configurations", "Update Configurations"]
+        },
+        {
+          "url": "/anchor/configurations/vendor",
+          "name": "Vendor Settings",
+          "slug": "anchor.configurations-vendor",
+          "permissions": ["Manage Vendor Settings"]
+        },
+        {
+          "url": "/anchor/configurations/company",
+          "name": "Company Profile",
+          "slug": "anchor.configurations-company",
+          "permissions": ["View Configurations", "Update Configurations"]
+        }
+      ]
+    }
+  ]
+}

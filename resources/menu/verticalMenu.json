@@ -1,0 +1,162 @@
+{
+  "menu": [
+    {
+      "url": "dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "bank.dashboard"
+    },
+    {
+      "name": "Portfolio Management",
+      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+      "slug": "requests",
+      "permissions": ["View Vendor Financing Requests", "View Dealer Financing Requests"],
+      "submenu": [
+        {
+          "url": "requests-reverse-factoring",
+          "name": "Vendor Financing",
+          "slug": "requests-reverse-factoring",
+          "permissions": ["View Vendor Financing Requests"]
+        },
+        {
+          "url": "requests-factoring",
+          "name": "Factoring",
+          "slug": "requests-factoring",
+          "permissions": ["View Vendor Financing Requests"]
+        },
+        {
+          "url": "requests-dealer-financing",
+          "name": "Dealer Financing",
+          "slug": "requests-dealer-financing",
+          "permissions": ["View Dealer Financing Requests"]
+        }
+      ]
+    },
+    {
+      "url": "payment-requests",
+      "name": "Payment Requests",
+      "icon": "menu-icon tf-icons ti ti-credit-card",
+      "slug": "payment-requests",
+      "permissions": ["View Payment Requests", "View CBS Transactions"]
+    },
+    {
+      "name": "Companies",
+      "icon": "menu-icon tf-icons ti ti-book-2",
+      "slug": "companies",
+      "permissions": ["View Companies", "Add/Edit Companies", "View OD Accounts"],
+      "submenu": [
+        {
+          "url": "companies.index",
+          "name": "Companies",
+          "slug": "companies.index",
+          "permissions": ["View Companies"]
+        },
+        {
+          "url": "companies.create",
+          "name": "Create Company",
+          "slug": "companies.create",
+          "permissions": ["Add/Edit Companies"]
+        },
+        {
+          "url": "companies.od-accounts",
+          "name": "OD Accounts",
+          "slug": "companies.od-accounts",
+          "permissions": ["View OD Accounts"]
+        }
+      ]
+    },
+    {
+      "url": "programs.index",
+      "name": "Programs",
+      "icon": "menu-icon tf-icons ti ti-player-record",
+      "slug": "programs.index",
+      "permissions": ["View Programs & Mapping"]
+    },
+    {
+      "name": "Reports",
+      "icon": "menu-icon tf-icons ti ti-report-analytics",
+      "slug": "reports",
+      "permissions": [
+        "View Trial Balance Report",
+        "View Anchorwise Distributors Report",
+        "View Anchorwise Vendor Report",
+        "View Cron Logs",
+        "View Failed CBS transaction Report"
+      ],
+      "submenu": [
+        {
+          "url": "reports.index",
+          "name": "All Reports",
+          "slug": "reports.index",
+          "permissions": [
+            "View Trial Balance Report",
+            "View Anchorwise Distributors Report",
+            "View Anchorwise Vendor Report",
+            "View Cron Logs",
+            "View Failed CBS transaction Report"
+          ]
+        },
+        {
+          "url": "reports.ledger",
+          "name": "Ledger Reports",
+          "slug": "reports.ledger",
+          "permissions": [
+            "View Trial Balance Report",
+            "View Anchorwise Distributors Report",
+            "View Anchorwise Vendor Report",
+            "View Cron Logs",
+            "View Failed CBS transaction Report"
+          ]
+        },
+        {
+          "url": "reports.logs",
+          "name": "Activity Logs",
+          "slug": "reports.logs",
+          "permissions": [
+            "View Trial Balance Report",
+            "View Anchorwise Distributors Report",
+            "View Anchorwise Vendor Report",
+            "View Cron Logs",
+            "View Failed CBS transaction Report"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Configurations",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "configurations",
+      "permissions": [
+        "View Platform Configurations",
+        "View Product Configurations",
+        "Manage Holidays",
+        "View Base Rates",
+        "Manage Base Rates",
+        "Edit Base Rates",
+        "View Taxes",
+        "Manage Taxes",
+        "Manage Branches"
+      ],
+      "submenu": [
+        {
+          "url": "configurations.index",
+          "name": "Configurations",
+          "slug": "configurations.index",
+          "permissions": ["View Platform Configurations", "View Product Configurations"]
+        },
+        {
+          "url": "configurations.base-rates",
+          "name": "Base Rate",
+          "slug": "configurations.base-rates",
+          "permissions": ["View Base Rates"]
+        },
+        {
+          "url": "configurations.pending",
+          "name": "Pending Configurations Approval",
+          "slug": "configurations.pending",
+          "permissions": ["View Platform Configurations", "View Product Configurations"]
+        }
+      ]
+    }
+  ]
+}

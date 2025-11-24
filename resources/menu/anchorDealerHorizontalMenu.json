@@ -1,0 +1,121 @@
+{
+  "menu": [
+    {
+      "url": "/anchor/dealer",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "anchor.dealer-dashboard"
+    },
+    {
+      "url": "/anchor/dealer/purchase-order",
+      "name": "Purchase Orders",
+      "icon": "menu-icon tf-icons ti ti-truck",
+      "slug": "anchor.dealer-purchase-orders.index",
+      "permissions": ["View Dealer POs"]
+    },
+    {
+      "name": "Invoices",
+      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+      "slug": "anchor.dealer-invoices",
+      "permissions": ["Request Finance for Distributor", "View Dealer Invoices", "View DPD Invoices"],
+      "submenu": [
+        {
+          "url": "/anchor/dealer/invoices",
+          "name": "All Invoices",
+          "slug": "anchor.dealer-invoices-index",
+          "permissions": ["View Dealer Invoices"]
+        },
+        {
+          "url": "/anchor/dealer/invoices/drawdown/create",
+          "name": "Create Invoice (Dealer Financing)",
+          "slug": "anchor.dealer-drawdown-create",
+          "permissions": ["Request Finance for Distributor"]
+        },
+        {
+          "url": "/anchor/dealer/invoices/payments",
+          "name": "Payments",
+          "slug": "anchor.dealer-invoices-payments",
+          "permissions": ["View Dealer Invoices"]
+        },
+        {
+          "url": "/anchor/dealer/invoices/expired",
+          "name": "Expired Invoices",
+          "slug": "anchor.dealer-invoices-expired",
+          "permissions": ["View Dealer Invoices"]
+        },
+        {
+          "url": "/anchor/dealer/invoices/od-accounts",
+          "name": "OD Accounts",
+          "slug": "anchor.dealer-invoices.od-accounts",
+          "permissions": ["View OD Accounts"]
+        },
+        {
+          "url": "/anchor/dealer/invoices/dealer/payment-instructions",
+          "name": "Dealer Payment Instructions",
+          "slug": "anchor.dealer-invoices.dealer.payment-instructions",
+          "permissions": ["View Dealer Invoices"]
+        },
+        {
+          "url": "/anchor/dealer/invoices/dealer/rejected-invoices",
+          "name": "Dealer Rejected Invoices",
+          "slug": "anchor.dealer-invoices.dealer.rejected-invoices",
+          "permissions": ["View Dealer Invoices"]
+        },
+        {
+          "url": "/anchor/dealer/invoices/dealer/dpd-invoices",
+          "name": "Dealer DPD Invoices",
+          "slug": "anchor.dealer-invoices.dealer.dpd-invoices",
+          "permissions": ["View DPD Invoices"]
+        }
+      ]
+    },
+    {
+      "url": "/anchor/dealer/reports/view",
+      "name": "Reports",
+      "icon": "menu-icon tf-icons ti ti-book-2",
+      "slug": "anchor.dealer-reports",
+      "permissions": [
+        "View PI Listing Report",
+        "View Financing Usage",
+        "View Limit Utilization Report",
+        "View All Invoices Report"
+      ],
+      "submenu": [
+        {
+          "url": "/anchor/dealer/reports/all-invoices-report/view",
+          "name": "All Invoices Report",
+          "slug": "anchor.dealer-reports.all-invoices",
+          "permissions": ["View All Invoices Report"]
+        },
+        {
+          "url": "/anchor/dealer/reports/dealer-programs-report/view",
+          "name": "Dealer Programs Report",
+          "slug": "anchor.dealer-reports.dealer.programs",
+          "permissions": ["View Limit Utilization Report"]
+        }
+      ]
+    },
+    {
+      "name": "Configurations",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "anchor.dealer-configurations",
+      "submenu": [
+        {
+          "url": "/anchor/dealer/configurations/general",
+          "name": "General",
+          "slug": "anchor.dealer-configurations-general"
+        },
+        {
+          "url": "/anchor/dealer/configurations/vendor",
+          "name": "Dealer Settings",
+          "slug": "anchor.dealer-configurations-vendor"
+        },
+        {
+          "url": "/anchor/dealer/configurations/company",
+          "name": "Company Profile",
+          "slug": "anchor.dealer-configurations-company"
+        }
+      ]
+    }
+  ]
+}

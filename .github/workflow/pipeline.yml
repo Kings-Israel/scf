@@ -1,0 +1,79 @@
+name: Deploy to Amazon EKS
+
+on:
+  push:
+    branches:
+      - kings
+
+env:
+  DOCKER_REGISTRY: registry.digitalocean.com
+  ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'prod' || 'uat' }}
+  NGINX_SERVER_NAME: ${{ github.ref == 'refs/heads/main' && 'scf.yofinvoice.com' || 'uat.yofinvoice.com' }}
+  PHPSESSIONID: SESSION_ID
+  PHP_SESSION_HANDLER_PATH: ${{ secrets.PHP_SESSION_SAVE_PATH }}
+  VAULT_TOKEN: ${{ secrets.VAULT_TOKEN }}
+  K8S_DEPLOY_NAME: market
+  K8S_NAMESPACE: ${{ github.ref == 'refs/heads/main' && 'prod-v1' || 'uat-v1' }}
+  K8S_LABEL: market
+  K8S_DEPLOY_REPLICAS: ${{ github.ref == 'refs/heads/main' && 2 || 1 }}
+  GITHUB_ACTOR: ${{ github.actor }}
+  GITHUB_RUNID: ${{ github.run_id }}
+  NGINX_DOCKER_BASE_IMAGE_NAME: realsources-africa-com/nginx
+  NGINX_DOCKER_BASE_IMAGE_TAG: alpine
+  PHP_DOCKER_BASE_IMAGE_NAME: realsources-africa-com/php
+  PHP_DOCKER_BASE_IMAGE_TAG: 8.2-alpine
+  K8S_INGRESS_NAME: scf
+  K8S_INGRESS_DNS_NAME: ${{ github.ref == 'refs/heads/main' && 'scf.yofinvoice.com' || 'uat.yofinvoice.com' }}
+  K8S_SERVICE_NAME: scf
+  K8S_SERVICE_PORT: 80
+  GITHUB_REPO_URL: ${{ github.repository_url }}
+  DOCKER_REGISTRY_K8S_CREDENTIALS: ${{ secrets.DOCKER_REGISTRY_K8S_CREDENTIALS }}
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up PHP
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2' # Specify your Laravel PHP version
+          extensions: mbstring, bcmath, ctype, tokenizer, xml, curl
+
+      # Step 3: Install Composer dependencies
+      - name: Install dependencies
+        run: |
+          composer install --no-dev --prefer-dist
+          php artisan config:cache
+          php artisan route:cache
+
+      # Step 4: Configure AWS CLI
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1 # Specify your region
+
+      # Step 5: Authenticate with Amazon EKS
+      - name: Authenticate with Amazon EKS
+        run: |
+          aws eks update-kubeconfig --name your-eks-cluster-name --region us-east-1
+
+      # Step 6: Build Docker image and push to Amazon ECR
+      - name: Build and push Docker image
+        run: |
+          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin <your-ecr-repo>
+          docker build -t <your-ecr-repo>:latest .
+          docker push <your-ecr-repo>:latest
+
+      # Step 7: Deploy to Amazon EKS using Kubernetes manifests
+      - name: Deploy to Amazon EKS
+        run: |
+          kubectl apply -f k8s/deployment.yml
+          kubectl apply -f k8s/service.yml

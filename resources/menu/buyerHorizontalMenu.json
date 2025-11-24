@@ -1,0 +1,124 @@
+{
+  "menu": [
+    {
+      "url": "/dealer/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "dealer.dashboard"
+    },
+    {
+      "name": "Invoices",
+      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+      "slug": "dealer.invoices",
+      "permissions": ["View Invoices"],
+      "submenu": [
+        {
+          "url": "/dealer/invoices",
+          "name": "All Invoices",
+          "slug": "dealer.invoices.index",
+          "permissions": ["View Invoices"]
+        },
+        {
+          "url": "dealer/invoices/initiate-drawdown",
+          "name": "Initiate Drawdown",
+          "slug": "dealer.invoices.initiate-drawdown",
+          "permissions": ["Initiate Drawdowns", "Request Dealer Finance"]
+        }
+      ]
+    },
+    {
+      "name": "Fund Planner",
+      "icon": "menu-icon tf-icons ti ti-adjustments-horizontal",
+      "slug": "dealer.planner",
+      "permissions": ["View Discounting Requests"],
+      "submenu": [
+        {
+          "url": "dealer/planner",
+          "name": "Planner",
+          "slug": "dealer.planner.index",
+          "permissions": ["Request Dealer Finance"]
+        },
+        {
+          "url": "dealer/planner/financing-requests",
+          "name": "Financing Requests",
+          "slug": "dealer.planner.financing-requests",
+          "permissions": ["View Discounting Requests"]
+        }
+      ]
+    },
+    {
+      "name": "Payment Accounts",
+      "icon": "menu-icon tf-icons ti ti-building-bank",
+      "slug": "dealer.accounts",
+      "permissions": ["View OD Repayments", "View OD Accounts"],
+      "submenu": [
+        {
+          "url": "dealer/accounts/od-details",
+          "name": "OD Details",
+          "slug": "dealer.accounts.od-details",
+          "permissions": ["View OD Accounts"]
+        },
+        {
+          "url": "dealer/accounts/od-repayments",
+          "name": "OD Repayments",
+          "slug": "dealer.accounts.od-repayments",
+          "permissions": ["View OD Repayments"]
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "icon": "menu-icon tf-icons ti ti-book-2",
+      "slug": "dealer.reports",
+      "submenu": [
+        {
+          "url": "/dealer/reports/all-invoices-report/view",
+          "name": "All Invoices Report",
+          "slug": "dealer.reports.all-invoices"
+        },
+        {
+          "url": "/dealer/reports/programs-report/view",
+          "name": "Programs Report",
+          "slug": "dealer.reports.programs"
+        },
+        {
+          "url": "/dealer/reports/payments-report/view",
+          "name": "Payments Report",
+          "slug": "dealer.reports.payments"
+        },
+        {
+          "url": "dealer/reports/dpd-invoices",
+          "name": "DPD Invoices",
+          "slug": "dealer.reports.dpd-invoices",
+          "permissions": ["View Invoices"]
+        },
+        {
+          "url": "dealer/reports/rejected-invoices",
+          "name": "Rejected Invoices",
+          "slug": "dealer.reports.rejected-invoices",
+          "permissions": ["View Invoices"]
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "dealer.configurations",
+      "permissions": ["View Configurations"],
+      "submenu": [
+        {
+          "url": "/dealer/settings/view",
+          "name": "Settings",
+          "slug": "dealer.configurations",
+          "permissions": ["View Configurations"]
+        },
+        {
+          "url": "dealer/settings/anchor-settings",
+          "name": "Anchor Settings",
+          "slug": "dealer.configurations.anchor-settings",
+          "permissions": ["View Configurations"]
+        }
+      ]
+    }
+  ]
+}

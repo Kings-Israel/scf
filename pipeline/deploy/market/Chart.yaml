@@ -1,0 +1,9 @@
+apiVersion: v1
+name: admin
+version: 1.0.${GITHUB_RUNID}
+description: "Helm Chart for YoFinvoice"
+keywords:
+  - Realsources Africa
+sources:
+  - ${GITHUB_REPO_URL}
+home: ${GITHUB_REPO_URL}

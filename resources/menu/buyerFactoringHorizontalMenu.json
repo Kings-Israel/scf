@@ -1,0 +1,110 @@
+{
+  "menu": [
+    {
+      "url": "/buyer/dashboard",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "buyer.dashboard"
+    },
+    {
+      "name": "Purchase Orders",
+      "icon": "menu-icon tf-icons ti ti-truck",
+      "slug": "buyer.purchase",
+      "permissions": ["View POs"],
+      "submenu": [
+        {
+          "url": "buyer/purchase-orders",
+          "name": "Purchase Orders",
+          "slug": "buyer.purchase-orders.index",
+          "permissions": ["View POs"]
+        },
+        {
+          "url": "buyer/purchase-orders/create",
+          "name": "Create Purchase Order",
+          "slug": "buyer.purchase-orders.create",
+          "permissions": ["Manage POs"]
+        }
+      ]
+    },
+    {
+      "name": "Invoices",
+      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+      "slug": "buyer.invoices",
+      "permissions": ["View Invoices"],
+      "submenu": [
+        {
+          "url": "buyer/invoices",
+          "name": "All Invoices",
+          "slug": "buyer.invoices.index",
+          "permissions": ["View Invoices"]
+        },
+        {
+          "url": "buyer/invoices/pending",
+          "name": "Pending Invoices",
+          "slug": "buyer.invoices.pending",
+          "permissions": ["View Invoices"]
+        },
+        {
+          "url": "buyer/invoices/payment-instructions",
+          "name": "Payment Instructions",
+          "slug": "buyer.invoices.payment-instructions",
+          "permissions": ["View Invoices"]
+        }
+      ]
+    },
+    {
+      "url": "buyer/reports/dashboard",
+      "name": "Reports",
+      "icon": "menu-icon tf-icons ti ti-book-2",
+      "slug": "buyer.reports",
+      "submenu": [
+        {
+          "url": "/buyer/reports/maturing-invoices-report",
+          "name": "Maturing Payments",
+          "slug": "buyer.reports.maturing-invoices"
+        },
+        {
+          "url": "/buyer/reports/paid-invoices-report",
+          "name": "Paid Invoices Report",
+          "slug": "buyer.reports.paid-invoices"
+        },
+        {
+          "url": "/buyer/reports/overdue-invoices-report",
+          "name": "Overdue Invoices Report",
+          "slug": "buyer.reports.overdue-invoices"
+        },
+        {
+          "url": "/buyer/reports/closed-invoices-report",
+          "name": "Closed Invoices Report",
+          "slug": "buyer.reports.closed-invoices"
+        }
+      ]
+    },
+    {
+      "name": "Configurations",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "buyer.configurations",
+      "permissions": ["View Configurations"],
+      "submenu": [
+        {
+          "url": "buyer/configurations/view",
+          "name": "Configurations",
+          "slug": "buyer.configurations.index",
+          "permissions": ["View Configurations"]
+        },
+        {
+          "url": "/buyer/configurations/vendors",
+          "name": "Vendor Settings",
+          "slug": "buyer.configurations.vendors",
+          "permissions": ["View Configurations"]
+        },
+        {
+          "url": "buyer/configurations/company",
+          "name": "Company Information",
+          "slug": "buyer.configurations.company",
+          "permissions": ["View Configurations"]
+        }
+      ]
+    }
+  ]
+}

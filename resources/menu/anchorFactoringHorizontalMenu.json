@@ -1,0 +1,100 @@
+{
+  "menu": [
+    {
+      "url": "/anchor/factoring",
+      "name": "Dashboard",
+      "icon": "menu-icon tf-icons ti ti-smart-home",
+      "slug": "anchor.factoring-dashboard"
+    },
+    {
+      "url": "/anchor/factoring/purchase-order",
+      "name": "Purchase Orders",
+      "icon": "menu-icon tf-icons ti ti-truck",
+      "slug": "anchor.factoring-purchase-orders.index",
+      "permissions": ["View Seller Purchase Orders"]
+    },
+    {
+      "name": "Invoices",
+      "icon": "menu-icon tf-icons ti ti-layout-sidebar",
+      "slug": "anchor.factoring-invoices",
+      "permissions": [
+        "View Seller Invoices",
+        "Manage Seller Invoices",
+        "Edit Seller Invoice",
+        "Flip Seller PO to Invoice",
+        "View Seller Payments"
+      ],
+      "submenu": [
+        {
+          "url": "/anchor/factoring/invoices",
+          "name": "All Invoices",
+          "slug": "anchor.factoring-invoices-index",
+          "permissions": ["View Seller Invoices"]
+        },
+        {
+          "url": "/anchor/factoring/invoices/create",
+          "name": "Create Invoice (Factoring)",
+          "slug": "anchor.factoring-invoices-create",
+          "permissions": ["Manage Seller Invoices"]
+        }
+      ]
+    },
+    {
+      "name": "Fund Planner",
+      "icon": "menu-icon tf-icons ti ti-coin",
+      "slug": "anchor.factoring-planner-index",
+      "permissions": ["View Seller Cash Planner"],
+      "url": "/anchor/factoring/planner"
+    },
+    {
+      "url": "/anchor/factoring/financing-requests",
+      "name": "Financing Requests",
+      "icon": "menu-icon tf-icons ti ti-currency-dollar",
+      "slug": "anchor.factoring-requests",
+      "permissions": ["View Seller Finance Requests"]
+    },
+    {
+      "url": "/anchor/factoring/reports/view",
+      "name": "Reports",
+      "icon": "menu-icon tf-icons ti ti-book-2",
+      "slug": "anchor.factoring-reports",
+      "permissions": [
+        "View PI Listing Report",
+        "View Financing Usage",
+        "View Limit Utilization Report",
+        "View All Invoices Report",
+        "View Seller Funding Utilization Limits",
+        "View Seller Financing Report",
+        "View Seller IF - Payment Details Report",
+        "View All Seller Invoices Report"
+      ],
+      "submenu": [
+        {
+          "url": "/anchor/factoring/reports/all-invoices-report/view",
+          "name": "All Invoices Report",
+          "slug": "anchor.factoring-reports.all-invoices",
+          "permissions": ["View All Seller Invoices Report"]
+        },
+        {
+          "url": "/anchor/factoring/reports/programs-report/view",
+          "name": "Programs Report",
+          "slug": "anchor.factoring-reports.programs",
+          "permissions": ["View Financing Usage"]
+        },
+        {
+          "url": "/anchor/factoring/reports/payments-report/view",
+          "name": "Payments Report",
+          "slug": "anchor.factoring-reports.payments",
+          "permissions": ["View Seller IF - Payment Details Report", "View Financing Usage"]
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "icon": "menu-icon tf-icons ti ti-settings",
+      "slug": "anchor.factoring-configurations",
+      "permissions": ["View Seller Configurations"],
+      "url": "/anchor/factoring/settings"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laravel-app
+spec:
+  replicas: ${K8S_DEPLOY_REPLICAS}
+  selector:
+    matchLabels:
+      app: laravel
+  template:
+    metadata:
+      labels:
+        app: laravel
+    spec:
+      containers:
+      - name: laravel-app
+        image: ${DOCKER_REGISTRY}/${K8S_IMAGE_NGINX}:latest
+        ports:
+        - containerPort: 80
