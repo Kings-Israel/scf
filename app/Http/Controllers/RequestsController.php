@@ -272,7 +272,7 @@ class RequestsController extends Controller
         }
       })
       ->when(!$sort_by || $sort_by == '', function ($query) {
-        $query->orderBy('reference_number', 'ASC');
+        $query->orderBy('reference_number', 'DESC');
       })
       ->when($type && $type != '', function ($query) use ($type) {
         if ($type == 'dashboard') {
@@ -388,7 +388,7 @@ class RequestsController extends Controller
         }
       })
       ->when(!$sort_by || $sort_by == '', function ($query) {
-        $query->orderBy('reference_number', 'ASC');
+        $query->orderBy('reference_number', 'DESC');
       })
       ->when($sort_by && $sort_by != '', function ($query) use ($sort_by) {
         switch ($sort_by) {
@@ -640,7 +640,7 @@ class RequestsController extends Controller
         }
       })
       ->when(!$sort_by || $sort_by == '', function ($query) {
-        $query->orderBy('reference_number', 'ASC');
+        $query->orderBy('reference_number', 'DESC');
       })
       ->when($type && $type != '', function ($query) use ($type) {
         if ($type == 'dashboard') {

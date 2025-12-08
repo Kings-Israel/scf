@@ -4,7 +4,7 @@
 
 @php
   $favicon = asset('assets/img/favicon/favicon.ico');
-  $page_title = 'YoFinvoice';
+  $page_title = 'Amani Access';
 @endphp
 @auth
   @php

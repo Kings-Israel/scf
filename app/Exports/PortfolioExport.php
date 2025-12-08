@@ -4,6 +4,7 @@ namespace App\Exports;
 
 use App\Http\Resources\PaymentRequestResource;
 use App\Models\Bank;
+use App\Models\CbsTransaction;
 use App\Models\PaymentRequest;
 use App\Models\Program;
 use App\Models\ProgramVendorConfiguration;
@@ -207,7 +208,7 @@ class PortfolioExport implements FromCollection, WithHeadings, WithMapping, Shou
         ->where(function ($query) {
           $query
             ->whereHas('cbsTransactions', function ($query) {
-              $query->where('transaction_type', 'Payment Disbursement');
+              $query->where('transaction_type', CbsTransaction::PAYMENT_DISBURSEMENT);
             })
             ->orWhereDoesntHave('cbsTransactions');
         })
@@ -378,7 +379,7 @@ class PortfolioExport implements FromCollection, WithHeadings, WithMapping, Shou
           }
         })
         ->when(!$this->sort_by || $this->sort_by == '', function ($query) {
-          $query->orderBy('reference_number', 'ASC');
+          $query->orderBy('reference_number', 'DESC');
         })
         ->get()
     );
