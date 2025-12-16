@@ -4697,7 +4697,7 @@ class ProgramsController extends Controller
       $vendor->programConfigurations()->create([
         'program_id' => $program->id,
         'payment_account_number' => $request->payment_account_number,
-        'sanctioned_limit' => Str::replace(',', '', $request->sanctioned_limit),
+        'sanctioned_limit' => !empty($request->sanctioned_limit) && Str::replace(',', '', $request->sanctioned_limit) > 0 ? Str::replace(',', '', $request->sanctioned_limit) : $program->max_limit_per_account,
         'limit_approved_date' => $request->limit_approved_date,
         'limit_expiry_date' =>
           $request->has('limit_expiry_date') && !empty($request->limit_expiry_date)
@@ -5778,7 +5778,7 @@ class ProgramsController extends Controller
       $anchor->programConfigurations()->create([
         'program_id' => $program->id,
         'payment_account_number' => $request->payment_account_number,
-        'sanctioned_limit' => Str::replace(',', '', $request->sanctioned_limit),
+        'sanctioned_limit' => !empty($request->sanctioned_limit) && Str::replace(',', '', $request->sanctioned_limit) > 0 ? Str::replace(',', '', $request->sanctioned_limit) : $program->max_limit_per_account,
         'limit_approved_date' => $request->limit_approved_date,
         'limit_expiry_date' =>
           $request->has('limit_expiry_date') && !empty($request->limit_expiry_date)
@@ -6871,7 +6871,7 @@ class ProgramsController extends Controller
       $dealer->programConfigurations()->create([
         'program_id' => $program->id,
         'payment_account_number' => $request->payment_account_number,
-        'sanctioned_limit' => Str::replace(',', '', $request->sanctioned_limit),
+        'sanctioned_limit' => !empty($request->sanctioned_limit) && Str::replace(',', '', $request->sanctioned_limit) > 0 ? Str::replace(',', '', $request->sanctioned_limit) : $program->max_limit_per_account,
         'limit_approved_date' => $request->limit_approved_date,
         'limit_expiry_date' =>
           $request->has('limit_expiry_date') && !empty($request->limit_expiry_date)
